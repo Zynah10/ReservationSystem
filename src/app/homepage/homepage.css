@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f6f9;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .logo img
+  {
+      width: 70px;
+      height: 70px;
+  }
+  
+  .logo h1
+  {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin-top: -70px;
+    margin-left: 80px;
+  }
+  
+  .navbar {
+    background-color: #0daf6c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .nav-links a {
+
+    text-decoration: none;
+    color: rgb(250, 242, 242);
+    font-size: 0.95rem;
+    border-style:solid;
+    border-radius: 5px;
+    border-width: 1px;
+    position:relative;
+    top:20px;
+    padding: 10px 10px 10px;
+    margin: 80px -40px 0 90px;
+  }
+
+  .nav-links a:hover
+  {
+    background-color: #23bae0;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-right .link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .lang-currency {
+    font-size: 0.9rem;
+  }
+  
+  .btn-outline, .btn-primary {
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: #003580;
+    border: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 2rem;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .btn-reserve {
+    background: #0071c2;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Search Form */
+  .search-bar {
+    position: relative;
+    z-index: 2;
+    border-style: solid;
+    border-color: #13cc4a;
+    border-width: 1px;
+    margin-top: 2rem;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+  }
+  
+  .input-group label {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+  }
+  
+  .input-group input,
+  .input-group select {
+    padding: 0.7rem;
+    border: 2px solid rgb(167, 68, 68);
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  
+  .btn-reserve {
+    background: #0071c2;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  
+  
+  /* Slideshow styles */
+  .slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+  
+  .slide {
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .fade {
+    animation: fadeEffect 1s ease-in-out;
+  }
+  
+  @keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+  }
+  
+  /* Dot indicators */
+  .dot-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #fff;
+  }
+  

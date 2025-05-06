@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservation Facilities</title>
+  <link rel="stylesheet" href="homepage.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      
+      <div class="logo"><img src="/assets/logoCTU.png" alt="Ctu logo"><h1>CTU Facilities Reservation</h1></div>
+      <nav class="nav-links">
+        <a href="#">Gym</a>
+        <a href="#">Laboratories</a>
+        <a href="#">Room</a>
+        <a href="#">Library/Smartrooms</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <button class="btn-outline">Register</button>
+      <button class="btn-primary">Sign in</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="slideshow-container">
+        <div class="slide fade" #slide><img src="./assets/1.jfif" alt="Slide 1"></div>
+        <div class="slide fade" #slide><img src="./assets/2.jfif" alt="Slide 2"></div>
+        <div class="slide fade" #slide><img src="./assets/3.jfif" alt="Slide 3"></div>
+      </div>
+      
+      <div class="dot-container">
+        <span class="dot" #dot (click)="currentSlide(1)"></span>
+        <span class="dot" #dot (click)="currentSlide(2)"></span>
+        <span class="dot" #dot (click)="currentSlide(3)"></span>
+      </div>
+
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Reserve your ideal space</h1>
+      <p>Simple , Fast and tailored to your needs.</p>
+      <button class="btn-reserve">Reserve yours</button>
+    </div>
+
+    <!-- Search Form -->
+    <form class="search-bar">
+      <div class="input-group">
+        <label><i class="fa fa-bed"></i>What facilities you want to reserve?</label>
+        <select>
+            <option>Gymnation Stage</option>
+            <option>Gymnation Ground</option>
+            <option>Gymnation Entire</option>
+          </select>
+      </div>
+      <div class="input-group">
+        <label>Reservation-in date</label>
+        <input type="date" />
+      </div>
+      <div class="input-group">
+        <label>Reservation-out date</label>
+        <input type="date" />
+      </div>
+      <div class="input-group">
+        <label>User</label>
+        <select>
+          <option>Student</option>
+          <option>Faculty and Staff</option>
+          <option>Guests</option>
+        </select>
+      </div>
+      <button class="btn-reserve">Reserve Now</button>
+    </form>
+
+  </section>
+
+</body>
+</html>
