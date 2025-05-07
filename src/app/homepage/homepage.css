@@ -42,9 +42,6 @@
     text-decoration: none;
     color: rgb(250, 242, 242);
     font-size: 0.95rem;
-    border-style:solid;
-    border-radius: 5px;
-    border-width: 1px;
     position:relative;
     top:20px;
     padding: 10px 10px 10px;
@@ -53,7 +50,12 @@
 
   .nav-links a:hover
   {
-    background-color: #23bae0;
+    background-color: #7cf3b7;
+    color: black;
+    border-color: black;
+    border-style:solid;
+    border-radius: 5px;
+    border-width: 1px;
   }
   
   .nav-right {
